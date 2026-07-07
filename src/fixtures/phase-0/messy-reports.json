@@ -29,44 +29,58 @@
   },
   {
     "id": "M-005",
-    "rawText": "志工說臨時物資站缺飲用水，但不確定是北側入口還是河堤旁那個點。",
-    "sourceType": "volunteer_update",
-    "verificationStatus": "needs_review",
-    "updatedAt": "2026-07-20T10:18:00+08:00"
-  },
-  {
-    "id": "M-006",
     "rawText": "截圖寫『中午前道路封閉』，但不知道截圖是哪一天，也不知道是不是官方公告。",
     "sourceType": "official_notice",
     "verificationStatus": "needs_review",
     "updatedAt": "2026-07-20T10:32:00+08:00"
   },
   {
-    "id": "M-007",
-    "rawText": "電話轉述：橋邊有老人家需要藥，但沒有姓名、聯絡方式，也不知道橋是哪一座。",
-    "sourceType": "phone_call",
-    "verificationStatus": "needs_review",
-    "updatedAt": "2026-07-20T10:45:00+08:00"
-  },
-  {
-    "id": "M-008",
+    "id": "M-006",
     "rawText": "有人回報學校側門可以當集合點，另一位志工說那裡剛剛淹水不適合停留。",
     "sourceType": "field_report",
     "verificationStatus": "needs_review",
     "updatedAt": "2026-07-20T11:02:00+08:00"
   },
   {
-    "id": "M-009",
+    "id": "M-007",
     "rawText": "社群貼文說某工班可以支援水電，但留言有人說那是昨天的名單，今天沒空。",
     "sourceType": "social_post",
     "verificationStatus": "unverified",
     "updatedAt": "2026-07-20T11:18:00+08:00"
   },
   {
-    "id": "M-010",
+    "id": "M-008",
     "rawText": "現場回報『A 區先不要再派人』，但沒有說是人太多、道路危險，還是任務已完成。",
     "sourceType": "field_report",
     "verificationStatus": "needs_review",
     "updatedAt": "2026-07-20T11:35:00+08:00"
+  },
+  {
+    "id": "M-009",
+    "rawText": "14:20 現場志工在光復車站東側出口回報：臨時集合點目前仍開放，但只接受已完成報到的清淤志工；一般物資請不要送到此處。回報者說入口公告貼在站前遮雨棚，尚未看到官方公告同步更新。",
+    "sourceType": "field_report",
+    "verificationStatus": "needs_review",
+    "updatedAt": "2026-07-20T14:25:00+08:00"
+  },
+  {
+    "id": "M-010",
+    "rawText": "【溪畔活動中心現場更新｜14:35】值守志工確認：雨鞋約剩 12 雙，尺寸多為 26-28；飲用水暫時不缺；不再收二手衣物。若要登記水電檢修需求，請改到大進路口服務台。下一次現場盤點預計 16:30。",
+    "sourceType": "volunteer_update",
+    "verificationStatus": "needs_review",
+    "updatedAt": "2026-07-20T14:35:00+08:00"
+  },
+  {
+    "id": "M-011",
+    "rawText": "現場志工代一位不方便使用手機的長者轉述：住家泥水已退，但需要協助搬動大型家具。志工只知道位置在大進路口往溪邊方向第二排住家，尚未確認長者是否同意公開完整地址。",
+    "sourceType": "field_report",
+    "verificationStatus": "needs_review",
+    "updatedAt": "2026-07-20T14:50:00+08:00"
+  },
+  {
+    "id": "M-012",
+    "rawText": "外地家屬來電表示親友住在光復老街附近，疑似需要藥品協助，但家屬不在現場，也無法確認親友目前位置。來電者希望有人協助確認狀況，但不確定是否應建立任務。",
+    "sourceType": "phone_call",
+    "verificationStatus": "needs_review",
+    "updatedAt": "2026-07-20T15:05:00+08:00"
   }
 ]

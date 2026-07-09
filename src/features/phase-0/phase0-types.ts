@@ -25,6 +25,14 @@ export type Phase0MessyRecord = {
   updatedAt: string;
 };
 
+export type Phase0Details = {
+  須協助者?: string; // 原文中的當事人或可能需要協助的人
+  通報者?: string; // 誰通報或代為轉述
+  需要資源?: string; // 原文提到的人力、物資、服務或其他需求
+  通報時間?: string; // 原文或資料欄位中的通報 / 更新時間
+  須協助地點?: string; // 原文提到的位置，未必可直接定位
+};
+
 export type Phase0JudgementDraft = {
   messyRecordId: string;
   possibleKind: Phase0PossibleKind;
@@ -34,4 +42,5 @@ export type Phase0JudgementDraft = {
   suggestedNextStep: Phase0SuggestedNextStep;
   unsafeToActDirectly: boolean;
   humanReviewNote?: string;
+  details?: Phase0Details;
 };

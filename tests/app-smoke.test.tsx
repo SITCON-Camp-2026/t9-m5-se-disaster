@@ -45,17 +45,29 @@ describe("App", () => {
     expect(screen.getAllByText("未查核").length).toBeGreaterThan(0);
   });
 
+  it("shows raw information classification fields", () => {
+    render(<App />);
+
+    expect(screen.getAllByText("須協助者").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("通報者").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("需要資源").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("通報時間").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("須協助地點").length).toBeGreaterThan(0);
+
+    fireEvent.click(screen.getByRole("button", { name: "整理工作台" }));
+
+    expect(screen.getByText("原始資訊分類")).toBeInTheDocument();
+  });
+
   it("keeps draft CRUD as learner work instead of starter output", () => {
     render(<App />);
 
     fireEvent.click(screen.getByRole("button", { name: "整理工作台" }));
 
-    expect(screen.getByText("尚未建立整理草稿")).toBeInTheDocument();
-    expect(
-      screen.getByText(/請 agent 加上建立、編輯、刪除或重設整理草稿/),
-    ).toBeInTheDocument();
-    expect(
-      screen.queryByText(/已產生 \d+ 筆安全邊界草稿/),
-    ).not.toBeInTheDocument();
+    // 預初始化 6 筆整理草稿供學員參考與編輯
+    expect(screen.getByText("已建立草稿")).toBeInTheDocument();
+    expect(screen.getByText("編輯整理草稿")).toBeInTheDocument();
+    // 確認有人工審視備註欄位
+    expect(screen.getAllByText("人工審視").length).toBeGreaterThan(0);
   });
 });
